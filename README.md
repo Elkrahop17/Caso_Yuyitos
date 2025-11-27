@@ -14,19 +14,6 @@ El enfoque principal fue validar procesos críticos como clientes, productos, pa
 - **Page Model & Selectores dinámicos**
 - **Variables de entorno (.env)**
 
----
-
-## 📂 Estructura general del proyecto
-
-automation/
-│── features/           # Escenarios .feature
-│── step_definitions/   # Código de pasos (steps)
-│── support/            # Configuración World, hooks, testController
-tests/
-│── page-model/         # Ejemplo de Page Object
-package.json
-README.md
-
 ## 👥 Equipo de trabajo
 
 Proyecto desarrollado por:
