@@ -1,0 +1,20 @@
+{
+  "name": "caso_yuyitos",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas (BDD con TestCafe + Cucumber)",
+  "scripts": {
+    "test:bdd": "npx @cucumber/cucumber --config automation/support/cucumber.js",
+    "test:bdd:headless": "set TESTCAFE_BROWSER=chrome:headless&& npx @cucumber/cucumber --config automation/support/cucumber.js",
+    "test:bdd:positivo": "npm run test:bdd -- --tags @positivo",
+    "test:bdd:negativo": "npm run test:bdd -- --tags @negativo"
+  },
+  "devDependencies": {
+    "@babel/helper-create-class-features-plugin": "^7.28.5",
+    "@cucumber/cucumber": "^12.2.0",
+    "dotenv": "16.4.5",
+    "gherkin-testcafe": "^7.4.0",
+    "node-testing-server": "^1.6.1",
+    "testcafe": "^3.5.0",
+    "testcafe-cucumber-steps": "^1.21.0"
+  }
+}
